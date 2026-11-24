@@ -10,6 +10,13 @@ for entry in ms_quant.roots():
 # Result
 # Software
 
+entries = ms_quant.terms()
+with_accession = sum(1 for entry in entries if entry.term)
+without_accession = len(entries) - with_accession
+
+print(f"Total entries: {len(entries)}") # 296
+print(f"With a CV accession: {with_accession}") #23
+print(f"Without a CV accession: {without_accession}") #273
 
     
 AGGREGATION = ms_quant.get_term(name="AggregationMethod")  # or even Method
