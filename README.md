@@ -33,8 +33,28 @@ when no CV accession is assigned. Keep keys stable when editing labels.
 
 Names match labels exactly, ignoring case. A missing entry raises `KeyError`;
 duplicate labels raise `AmbiguousTermError`, and can be distinguished by key.
-Search matches keys, accessions, labels, synonyms, and definitions. Results are
-sorted by name and key. Both `terms()` and `search()` support `classes_only=True`.
+
+## Main functions
+
+| Function | What it returns |
+| --- | --- |
+| `ms_quant.roots()` | The five top-level classes in the bundled ontology, including `Method`. |
+| `ms_quant.children("Method")` | The direct children of `Method`. |
+| `ms_quant.descendants("Method")` | All terms below `Method`, at every depth. |
+| `ms_quant.ancestors("FoldChange")` | All terms above `FoldChange`, including its direct parents. |
+| `ms_quant.get_term(name="Method")` | One `Term` by exact label, ignoring case. Use a positional argument for a local key or CV accession, as in `get_term("MS:1001583")`. |
+| `ms_quant.terms()` | All named terms. Pass `classes_only=True` to list only ontology classes. |
+| `ms_quant.search("intensity")` | Terms with a case-insensitive partial match in their keys, accessions, labels, synonyms, or definitions. Supports `classes_only=True`. |
+| `ms_quant.get_node("_:structure001")` | A raw ontology node as a dictionary, looked up by local key. This also works for anonymous OWL structures. |
+| `ms_quant.Vocabulary.from_file("output/ontology.json")` | A vocabulary loaded from a local JSON file, with the same lookup and traversal methods. |
+
+The list functions return `Term` objects sorted by name and then key. To print
+the names of the top-level classes, loop over `roots()`.
+
+```python
+for entry in ms_quant.roots():
+    print(entry.name)
+```
 
 ## CV mapping and editable accession field
 
