@@ -1,0 +1,144 @@
+Metadata-Version: 2.4
+Name: ms-quant-ontology
+Version: 0.1.0
+Summary: Offline Python access to the quantification ontology
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Quantification ontology Python library
+
+`ms_quant` provides offline lookup, search, and hierarchy traversal for 263
+ontology classes and 33 named properties. It has no runtime dependencies and
+uses a bundled snapshot, without downloading data automatically.
+
+## Install and use
+
+```sh
+python3 -m pip install -e .
+```
+
+```python
+import ms_quant
+
+entry = ms_quant.get_term(name="MaxQuant")
+print(entry.name)        # MaxQuant
+print(entry.term)        # MS:1001583
+print(entry.definition)
+print(entry.xrefs)
+
+entry = ms_quant.get_term("MS:1001583")
+matches = ms_quant.search("intensity")
+children = ms_quant.children("Method")
+ancestors = ms_quant.ancestors("FoldChange")
+descendants = ms_quant.descendants("Method")
+classes = ms_quant.terms(classes_only=True)
+```
+
+Entries have a readable local `key` (for example `MaxQuant`), a label in `name`,
+and an optional CV accession in `term`. The key preserves relationships even
+when no CV accession is assigned. Keep keys stable when editing labels.
+There are no public `id` or `parents` attributes.
+
+Names match labels exactly, ignoring case. A missing entry raises `KeyError`;
+duplicate labels raise `AmbiguousTermError`, and can be distinguished by key.
+Search matches keys, accessions, labels, synonyms, and definitions. Results are
+sorted by name and key. Both `terms()` and `search()` support `classes_only=True`.
+
+## CV mapping and editable accession field
+
+Edit **`output/ontology.json`**. Each node has a `term` string:
+
+- A unique match to an active PSI-MS preferred name or EXACT synonym gets its
+  `MS:` accession. Matching ignores case, whitespace, and punctuation.
+- Unresolved or ambiguous matches remain `""`. An empty value means no confirmed
+  mapping under this policy; it does not prove the concept is absent from the CV.
+- Existing related references remain in `xrefs`; they are not automatically
+  promoted to equivalent accessions. For example `QuantifiedProtein` references
+  the broader CV concept `protein`, but its `term` remains empty.
+- Nonclass entries and anonymous structures remain unassigned by the automated
+  matcher. They may be curated separately. Anonymous structures are not public terms.
+- Nonempty accessions must be unique. Once curated, do not reassign them.
+
+The initial mapping uses PSI-MS version 4.2.17: 23 classes have an unambiguous
+name match, and 240 remain unresolved. This is a conservative name-based mapping,
+not a semantic equivalence review. The source URL, version, SHA-256, matching
+policy, and per-class evidence are in **`output/cv_mapping.json`**. It also records
+the current names and existence of inherited `MS:` references. Other namespaces
+and external URLs remain references without a new validation claim.
+
+Reproduce or update the mapping from an explicitly downloaded CV file:
+
+```sh
+python3 scripts/map_cv.py /path/to/psi-ms-core.obo
+python3 scripts/sync_data.py
+```
+
+The matcher preserves manually filled accessions. Its evidence report describes
+the mapping at the time it was run; rerun it after manual edits to refresh the
+report. `sync_data.py` refreshes the package snapshot and JSON-LD export without
+changing mappings. Restart Python to reload the default snapshot, or load the
+editable file directly:
+
+```python
+from ms_quant import Vocabulary
+
+vocabulary = Vocabulary.from_file("output/ontology.json")
+entry = vocabulary.get_term(name="LabelFreeQuantification")
+print(entry.term)  # Empty: its inherited reference alone is not an exact match
+```
+
+## Hierarchy
+
+The existing five roots and asserted subclass relationships are preserved:
+
+```text
+ExperimentalDesign
+  ExperimentalCondition
+  ReplicateStructure
+  SeriesDesign
+  IsobaricLabelFormat, IsobaricLabelChannel, ...
+Method
+  QuantificationMethod
+  ProcessingMethod
+  AggregationMethod
+QuantifiedEntity
+  QuantifiedProtein, QuantifiedPeptide, QuantifiedPSM, ...
+Result
+  QuantificationResult
+  QuantificationUnit
+  StatisticalResults
+Software
+  Category
+  Implementation
+```
+
+This is a graph: `FoldChange`, for example, remains a subclass of both `RatioUnit`
+and `RatioBasedEffectSize`. Traversal uses readable local `rdfs:subClassOf`
+references and does not depend on having a CV accession. Custom `is_a`
+annotations remain annotations, rather than inferred subclasses. Traversal
+returns unique reachable named entries, excludes the starting entry, and
+terminates on cycles. `roots()` returns named classes without any asserted
+subclass statement. No RDF reasoning is performed.
+
+Properties retain definitions, annotations, datatypes, languages, and OWL
+restrictions using local keys and standard `rdf:`, `rdfs:`, `owl:`, and `xsd:`
+prefixes. Inspect them through `entry.properties`. Read anonymous structures
+using `ms_quant.get_node("_:structure001")`.
+
+## Files and development
+
+- `output/ontology.json`: editable schema version 3 data with readable local keys.
+- `output/ontology.jsonld`: generated RDF export using local `urn:ms-quant:`
+  resources and standard RDF IRIs. Filled accessions are included in this export.
+- `output/cv_mapping.json`: CV mapping evidence and source metadata.
+- `src/ms_quant/data/ontology.json`: generated package snapshot; edit the file
+  in `output/` and sync it.
+
+```sh
+python3 scripts/sync_data.py
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+python3 -m pip wheel --no-deps . -w dist
+```
+
+Package version: 0.1.0. Future releases should document data changes alongside
+code changes. The project does not include a browser or an API server.

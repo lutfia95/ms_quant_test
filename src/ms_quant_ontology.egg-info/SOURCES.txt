@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/ms_quant/__init__.py
+src/ms_quant/vocabulary.py
+src/ms_quant/data/ontology.json
+src/ms_quant_ontology.egg-info/PKG-INFO
+src/ms_quant_ontology.egg-info/SOURCES.txt
+src/ms_quant_ontology.egg-info/dependency_links.txt
+src/ms_quant_ontology.egg-info/top_level.txt
+tests/test_mapping.py
+tests/test_vocabulary.py

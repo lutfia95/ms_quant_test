@@ -1,0 +1,2790 @@
+{
+  "cv_source": {
+    "name": "PSI-MS",
+    "version": "4.2.17",
+    "url": "https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms-core.obo",
+    "sha256": "7fea2bca11d297de9008190347ebd205f87ef96c1d984a3bc39a79753e63982f",
+    "checked_on": "2026-11-22"
+  },
+  "policy": "Unique active PSI-MS preferred-name or EXACT-synonym match to a local class label or exact synonym, ignoring case, spacing and punctuation. Related references are not equivalence mappings. Nonclass entries are left unassigned. Existing nonempty assignments are preserved.",
+  "summary": {
+    "unresolved": 240,
+    "exact_name_match": 23
+  },
+  "entries": [
+    {
+      "key": "SeriesDesign",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001815",
+          "exists": true,
+          "name": "time series, time point X",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1001816",
+          "exists": true,
+          "name": "dilution series, concentration X",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "RatioUnit",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantMS",
+      "term": "MS:1003425",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1003425"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003425",
+          "exists": true,
+          "name": "quantms",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "MedianPolishAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SpectralCount",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001842",
+          "exists": true,
+          "name": "sequence-level spectral count",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1002153",
+          "exists": true,
+          "name": "protein level PSM counts",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1002733",
+          "exists": true,
+          "name": "peptide-level spectral count",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "QuantifiedEntity",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "CyclicLOESSNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "OpenMS",
+      "term": "MS:1003430",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1003430"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003430",
+          "exists": true,
+          "name": "OpenMS",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "IntensityMeasure",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "VisualizationSoftware",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantifiedPSM",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003301",
+          "exists": true,
+          "name": "peptide-spectrum match",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "ChemicalLabeling",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Abundance",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001805",
+          "exists": true,
+          "name": "quantification datatype",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "FoldChange",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MaxQuant",
+      "term": "MS:1001583",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001583"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001583",
+          "exists": true,
+          "name": "MaxQuant",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "Result",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Log10Transformation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Control",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001811",
+          "exists": true,
+          "name": "experimental condition 'control'",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "SVDImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "AreaMeasure",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LogTransformation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMTBatch",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "WilcoxonRankSumTest",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "NSAF",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002547",
+          "exists": true,
+          "name": "normalized spectral abundance factor",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TopNAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantifiedModification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "DimensionalityReductionMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMTpro35plex",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ReplicateStructure",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001807",
+          "exists": true,
+          "name": "study variable attribute",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "ScalingMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "CorrelationEffectSize",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ConcentrationUnit",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LinearDimensionalityReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PermutationBasedFDR",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MS1",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SignificanceScore",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Log10FoldChange",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantileNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001863",
+          "exists": true,
+          "name": "quantile normalization, proteins",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1001864",
+          "exists": true,
+          "name": "quantile normalization, peptides",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TimeSeries",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001815",
+          "exists": true,
+          "name": "time series, time point X",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "DimethylLabeling",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SquareRootTransformation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003241",
+          "exists": true,
+          "name": "square root transform",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TMT10plex",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantifiedPeptidoform",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003049",
+          "exists": true,
+          "name": "peptidoform",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "LocalizedOnly",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "NeighborBasedImputationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ExperimentalCondition",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001807",
+          "exists": true,
+          "name": "study variable attribute",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1001814",
+          "exists": true,
+          "name": "generic experimental condition",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "LC-MS feature intensity",
+      "term": "MS:1001840",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001840"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001840",
+          "exists": true,
+          "name": "LC-MS feature intensity",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "AssociationEffectSize",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ZeroImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "CohensD",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LowRankImputationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Mascot",
+      "term": "MS:1001207",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001207"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001207",
+          "exists": true,
+          "name": "Mascot",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "UpperQuartileNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PSM-based",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "RazorAllowed",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LinearModel",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PCABasedBatchCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "IntensityWeighted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MaxLFQ",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "CopyNumber",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002513",
+          "exists": true,
+          "name": "molecules per cell",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "MS2Rescore",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "OddsRatio",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantileDivisionNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TruncatedNormalDistributionImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "EffectSize",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "KruskalWallisTest",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "IntensityBased",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001834",
+          "exists": true,
+          "name": "LC-MS label-free quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "CountMeasure",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "RelativeQuantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MeanNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "RobustZScoreStandardization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Case",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001810",
+          "exists": true,
+          "name": "experimental condition 'case'",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "ChannelLabel",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ObservedInAtLeastK",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMTChannel",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002615",
+          "exists": true,
+          "name": "TMT reagent",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "MADScaling",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MS2TIC",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "NormalizationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001484",
+          "exists": true,
+          "name": "intensity normalization",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "FilteringMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001486",
+          "exists": true,
+          "name": "data filtering",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "AllInputs",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "RUVBasedBatchCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "GlasssDelta",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "WeightingScheme",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ReferenceBasedNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "BenjaminiHochbergCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "CorrectionFactorEntry",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ClassicLFQAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PLSReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PeptideCount",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001895",
+          "exists": true,
+          "name": "Progenesis:peptide count",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "LDAReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantifiedProteinGroup",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TruncatedSVD",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MeanDifferenceEffectSize",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LocallyLinearEmbedding",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MinProbImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "IsobaricLabelQuantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002009",
+          "exists": true,
+          "name": "isobaric label quantitation analysis",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1002023",
+          "exists": true,
+          "name": "MS2 tag-based analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "ProcessingMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "127",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002617",
+          "exists": true,
+          "name": "TMT reagent 127",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "PosteriorErrorProbability",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "EMImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MultipleTestingCorrectionMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Log2Transformation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ZScore",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QValue",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "BonferroniCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "StatisticalSoftware",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PPM",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MissingValueImputationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "CanonicalCorrelationAnalysis",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MICEImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "IsobaricLabelFormat",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "FragPipe",
+      "term": "MS:1003429",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1003429"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003429",
+          "exists": true,
+          "name": "FragPipe",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "CorrectionFactorMatrix",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TTest",
+      "term": "MS:1002070",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1002070"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002070",
+          "exists": true,
+          "name": "t-test",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "SAF",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Method",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "BPCAImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MinDetImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Implementation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantificationUnit",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MSAnnika",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMTMS1Quantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "XICArea",
+      "term": "MS:1001858",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001858"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001858",
+          "exists": true,
+          "name": "XIC area",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "DispersionStatistic",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002884",
+          "exists": true,
+          "name": "study variable variation function",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "EqualWeight",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ProcessingSoftware",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001457",
+          "exists": true,
+          "name": "data processing software",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "LinearMixedModel",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MS2",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantifiedProtein",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000882",
+          "exists": true,
+          "name": "protein",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TotalIntensityNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001862",
+          "exists": true,
+          "name": "normalization to mean of sum of all proteins",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "IdentificationSoftware",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001456",
+          "exists": true,
+          "name": "analysis software",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "MedianDifference",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantificationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001833",
+          "exists": true,
+          "name": "quantitation analysis summary",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "Healthy",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001813",
+          "exists": true,
+          "name": "experimental condition 'healthy'",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "MedianNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "InternalReferenceNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TopN",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MedianImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LabelBasedQuantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "VarianceStabilizingNormalization",
+      "term": "MS:1002211",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1002211"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002211",
+          "exists": true,
+          "name": "Variance stabilizing normalization",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "VarianceWeighted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ComBatBatchCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TargetedQuantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMT",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002010",
+          "exists": true,
+          "name": "TMT quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "WilcoxonSignedRankTest",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SpectralEmbedding",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Log2FoldChange",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "AbundanceUnit",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "tSNEReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ScoreWeighted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MeanAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002962",
+          "exists": true,
+          "name": "mean",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "BenjaminiHochbergAdjusted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QRILCImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Skyline",
+      "term": "MS:1000922",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1000922"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000922",
+          "exists": true,
+          "name": "Skyline",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "RemoveBatchEffectBatchCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SILAC",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001835",
+          "exists": true,
+          "name": "SILAC quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "QuantifiedGene",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000934",
+          "exists": true,
+          "name": "gene name",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "PairedTTest",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002070",
+          "exists": true,
+          "name": "t-test",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "HighConfidenceOnly",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMTReagentKit",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ConfidenceInterval",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ComBatseqBatchCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ReporterIonIntensity",
+      "term": "MS:1001847",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001847"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001847",
+          "exists": true,
+          "name": "reporter ion intensity",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TMTMS3Quantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TStatistic",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "StatisticalMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001861",
+          "exists": true,
+          "name": "quantification data processing",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "KendallTau",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LOESSNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "HazardRatio",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "IsobaricLabelBatch",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "RetentionTimeAlignment",
+      "term": "MS:1000745",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1000745"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000745",
+          "exists": true,
+          "name": "retention time alignment",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "HedgesG",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PEAKS",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001946",
+          "exists": true,
+          "name": "PEAKS Studio",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1001947",
+          "exists": true,
+          "name": "PEAKS Online",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1001948",
+          "exists": true,
+          "name": "PEAKS Node",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "StandardError",
+      "term": "MS:1002885",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1002885"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002885",
+          "exists": true,
+          "name": "standard error",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "IsotopicLabeling",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002018",
+          "exists": true,
+          "name": "MS1 label-based analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "Proteome Discoverer",
+      "term": "MS:1000650",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1000650"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000650",
+          "exists": true,
+          "name": "Proteome Discoverer",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "ModelBasedImputationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Spectronaut",
+      "term": "MS:1001327",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001327"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001327",
+          "exists": true,
+          "name": "Spectronaut",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "BonferroniAdjusted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "RawMeanDifference",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantificationSoftware",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001139",
+          "exists": true,
+          "name": "quantitation software name",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "DownshiftedNormalDistributionImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MedianAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002883",
+          "exists": true,
+          "name": "median",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TransitionWeighted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "KNNImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TechnicalReplicate",
+      "term": "MS:1001808",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001808"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001808",
+          "exists": true,
+          "name": "technical replicate",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "MetabolicLabeling",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "StatisticalResults",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "UMAPReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MissForestImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantifiedPeptide",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000860",
+          "exists": true,
+          "name": "peptide",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "RobustRegressionModel",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Software",
+      "term": "MS:1000531",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1000531"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000531",
+          "exists": true,
+          "name": "software",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "FDRAdjusted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "AggregationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "HypothesisTestMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "FStatistic",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SpearmansRho",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantificationResult",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001805",
+          "exists": true,
+          "name": "quantification datatype",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TMT11plex",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "IsobaricLabelChannel",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "FlashLFQ",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "AlignmentMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000745",
+          "exists": true,
+          "name": "retention time alignment",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TMT6plex",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ZScoreStandardization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMTMS2Quantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002023",
+          "exists": true,
+          "name": "MS2 tag-based analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "IsobaricReagentKit",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TMTpro18plex",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ExperimentalDesign",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ChiSquare",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "CoefficientOfVariation",
+      "term": "MS:1001883",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001883"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001883",
+          "exists": true,
+          "name": "coefficient of variation",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1002963",
+          "exists": true,
+          "name": "variation coefficient",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1003178",
+          "exists": true,
+          "name": "attribute coefficient of variation",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "Disease",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001812",
+          "exists": true,
+          "name": "experimental condition 'disease'",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "NonlinearDimensionalityReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "iTRAQ",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001837",
+          "exists": true,
+          "name": "iTRAQ quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "UniqueOnly",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PearsonsR",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TransformationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003240",
+          "exists": true,
+          "name": "peak intensity transform",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "AbsoluteQuantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002514",
+          "exists": true,
+          "name": "absolute quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "QuantifiedFeature",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002735",
+          "exists": true,
+          "name": "feature-level quantification datatype",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TMTpro16plex",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "BatchEffectCorrectionMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LeftCensoredImputationMethod",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "InputConstraint",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "AdjustedPValue",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PCAReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "StandardizedMeanDifferenceEffectSize",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "QuantifiedPeptideIon",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002734",
+          "exists": true,
+          "name": "peptide ion-level spectral count",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1003051",
+          "exists": true,
+          "name": "peptidoform ion",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "ReferenceChannelNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "FullyObserved",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LabelFreeQuantification",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001834",
+          "exists": true,
+          "name": "LC-MS label-free quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "PPB",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "VarianceStabilizingTransformation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "EngineInternalAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "PRM",
+      "term": "MS:1003907",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1003907"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003907",
+          "exists": true,
+          "name": "parallel reaction monitoring",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "TestStatistic",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "IntensityUnit",
+      "term": "MS:1000043",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1000043"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000043",
+          "exists": true,
+          "name": "intensity unit",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "BestScoringOnly",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "BiologicalReplicate",
+      "term": "MS:1001809",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1001809"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001809",
+          "exists": true,
+          "name": "biological replicate",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "SRM/MRM",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1000206",
+          "exists": true,
+          "name": "selected reaction monitoring",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1001838",
+          "exists": true,
+          "name": "SRM quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "QuantifiedFragment",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "DIA-NN",
+      "term": "MS:1003253",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1003253"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1003253",
+          "exists": true,
+          "name": "DIA-NN",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "iBAQ",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MinMaxScaling",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "MeanImputation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SpectralCountBased",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001836",
+          "exists": true,
+          "name": "spectral counting quantitation analysis",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "PermutationTest",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "UserAppliedAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "127N",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002763",
+          "exists": true,
+          "name": "TMT reagent 127N",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "MaxAbsoluteNormalization",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "FeatureIntegratedIntensity",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1001841",
+          "exists": true,
+          "name": "LC-MS feature volume",
+          "obsolete": false
+        },
+        {
+          "term": "MS:1001844",
+          "exists": true,
+          "name": "MS1 feature area",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "126",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002616",
+          "exists": true,
+          "name": "TMT reagent 126",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "SupervisedDimensionalityReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SharedAllowed",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "TransitionSpecific",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "UnitVectorScaling",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "LimmaBatchCorrection",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "RatioBasedEffectSize",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ConfidenceWeighted",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "Category",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "SumAggregation",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    },
+    {
+      "key": "ANOVA",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002071",
+          "exists": true,
+          "name": "ANOVA-test",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "PValue",
+      "term": "MS:1002072",
+      "status": "exact_name_match",
+      "candidates": [
+        "MS:1002072"
+      ],
+      "assigned_term_active": true,
+      "existing_cv_references": [
+        {
+          "term": "MS:1002072",
+          "exists": true,
+          "name": "p-value",
+          "obsolete": false
+        }
+      ]
+    },
+    {
+      "key": "IsomapReduction",
+      "term": "",
+      "status": "unresolved",
+      "candidates": [],
+      "assigned_term_active": false,
+      "existing_cv_references": []
+    }
+  ]
+}
