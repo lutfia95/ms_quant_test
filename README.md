@@ -30,7 +30,6 @@ classes = ms_quant.terms(classes_only=True)
 Entries have a readable local `key` (for example `MaxQuant`), a label in `name`,
 and an optional CV accession in `term`. The key preserves relationships even
 when no CV accession is assigned. Keep keys stable when editing labels.
-There are no public `id` or `parents` attributes.
 
 Names match labels exactly, ignoring case. A missing entry raises `KeyError`;
 duplicate labels raise `AmbiguousTermError`, and can be distinguished by key.
@@ -82,7 +81,93 @@ print(entry.term)  # Empty: its inherited reference alone is not an exact match
 
 ## Hierarchy
 
-The existing five roots and asserted subclass relationships are preserved:
+`ms_quant.children(entry.key)` returns a list of the term's direct children.
+Each child is already a `Term` object, so you can read its details and pass its
+`.key` back to `children()` to go down another level.
+
+### Fields on each child
+
+| Attribute | What it contains |
+| --- | --- |
+| `child.key` | Local identifier used to look up the term and traverse its relationships. |
+| `child.name` | Display name, taken from the first label or the local key. |
+| `child.labels` | Tuple of ontology labels. |
+| `child.definition` | Definition text, or `None` if absent. |
+| `child.term` | Confirmed CV accession, or `""` if unassigned. |
+| `child.xrefs` | Tuple of related references. |
+| `child.synonyms` | Tuple of synonyms. |
+| `child.types` | Tuple of RDF types, such as `("owl:Class",)`. |
+| `child.is_class` | Boolean indicating whether the term is an OWL class. |
+| `child.properties` | Dictionary of ontology predicates and their values, including definitions, labels, and subclass relationships where present. |
+
+For example, `InputConstraint` has
+`[{"kind": "reference", "value": "AggregationMethod"}]` under
+`child.properties["rdfs:subClassOf"]`. That property points to its parent.
+Calling `ms_quant.children(child.key)` gives the terms directly below it,
+including `AllInputs`.
+
+### Print details and child names together
+
+This loop prints `AggregationMethod` and each of its direct children with
+their definitions, properties, and the names directly below them.
+
+```python
+import ms_quant
+
+aggregation = ms_quant.get_term(name="AggregationMethod")
+
+for entry in [aggregation, *ms_quant.children(aggregation.key)]:
+    print("######################################")
+    print(entry.name)
+    print(entry.definition)
+    print(entry.properties)
+
+    for child in ms_quant.children(entry.key):
+        print(f"  - {child.name}")
+```
+
+`ms_quant.descendants(aggregation.key)` returns a flat list of all terms below
+`AggregationMethod`, sorted by name and then key. To see how they are grouped,
+follow the direct children at each level. Here is the aggregation branch of
+`Method` in the bundled ontology.
+
+```text
+Method
+└── AggregationMethod
+    ├── EngineInternalAggregation
+    ├── InputConstraint
+    │   ├── AllInputs
+    │   ├── BestScoringOnly
+    │   ├── FullyObserved
+    │   ├── HighConfidenceOnly
+    │   ├── LocalizedOnly
+    │   ├── ObservedInAtLeastK
+    │   ├── RazorAllowed
+    │   ├── SharedAllowed
+    │   ├── TopN
+    │   ├── TransitionSpecific
+    │   └── UniqueOnly
+    ├── UserAppliedAggregation
+    │   ├── ClassicLFQAggregation
+    │   ├── iBAQ
+    │   ├── MaxLFQ
+    │   ├── MeanAggregation
+    │   ├── MedianAggregation
+    │   ├── MedianPolishAggregation
+    │   ├── SumAggregation
+    │   └── TopNAggregation
+    └── WeightingScheme
+        ├── ConfidenceWeighted
+        ├── EqualWeight
+        ├── IntensityWeighted
+        ├── ScoreWeighted
+        ├── TransitionWeighted
+        └── VarianceWeighted
+```
+
+### Ontology roots
+
+The ontology has five roots. Selected direct children are shown below.
 
 ```text
 ExperimentalDesign
